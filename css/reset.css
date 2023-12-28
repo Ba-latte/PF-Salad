@@ -73,21 +73,4 @@ button {
   overflow: hidden;
 }
 
-#footer {
-  width: 100%;
-  height: 100px;
-  background-color: #333333;
-  border: 1px solid #000;
-  text-align: center;
-}
-#footer .content {
-  margin-top: 20px;
-  color: #fafafa;
-}
-
-#wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=reset.css.map */

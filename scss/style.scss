@@ -1,3 +1,4 @@
+// 변수 설정
 $color_black: #000000;
 $color_white: #ffffff;
 
@@ -24,4 +25,10 @@ $color_gray40: #f7f7f7;
 $color_gray30: #f6f6f6;
 $color_gray20: #fafafa;
 
+@import "reset";
+@import "footer";
 
+#wrap{
+  max-width: 1920px;
+  margin: 0 auto;
+}

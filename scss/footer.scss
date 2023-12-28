@@ -1,0 +1,12 @@
+#footer{
+  width: 100%;
+  height: 100px;
+  background-color: $color_gray80;
+  border: 1px solid #000;
+  text-align: center;
+
+  .content{
+    margin-top: 20px;
+    color: $color_gray20;
+  }
+}
