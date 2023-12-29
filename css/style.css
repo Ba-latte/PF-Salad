@@ -85,6 +85,28 @@ button {
   color: #fafafa;
 }
 
+#header {
+  width: 100%;
+  display: flex;
+}
+#header .logo {
+  width: 20%;
+  height: 70px;
+  background-color: orange;
+}
+#header ul {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: green;
+}
+#header ul a {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
 #wrap {
   max-width: 1920px;
   margin: 0 auto;
