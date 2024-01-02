@@ -169,13 +169,14 @@ button {
   gap: 10px;
   z-index: 1;
   display: none;
+  margin-left: -150px;
 }
 #header .subMenu > li {
   padding: 10px 0;
 }
 #header .subMenu > li > .link {
   color: #575757;
-  font-size: 18px;
+  font-size: 16px;
 }
 #header .subMenu > li > .link:hover {
   color: #17643f;
