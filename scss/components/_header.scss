@@ -12,12 +12,12 @@
   display: flex;
   border-bottom: 1px solid var.$color_gray50;
 
+  // 로고
   .logo{
     width: 20%;
     height: 70px;
     display: flex;
     align-items: center;
-    // background-color: orange;
 
     .link{
       display: block;
@@ -27,15 +27,15 @@
       background: url(../assets/salady_logo.png) no-repeat center/cover;
     }
   }
+
+  // 상위메뉴
   .topMenu{
-    // position: relative;
     width: 80%;
     height: 70px;
     padding: 0 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // background-color: green;
 
     >li{
       // 서브메뉴 배경
@@ -46,10 +46,10 @@
         left: 0;
         width: 100%;
         height: 70px;
-
-        background-color: var.$color_main_green;
+        border-bottom: 2px solid var.$color_main_green;
         display: none;
       }
+
       >.link{
         display: block;
         width: 100%;
@@ -59,10 +59,11 @@
         font-size: 18px;
         line-height: 70px;
       }
+      // 마우스오버시
       &:hover{
         >.link{
-          @include hover;
-          border-bottom: 3px solid var.$color_main_green;
+          border-bottom-color: var.$color_main_green;
+          color: var.$color_main_green;
         }
         // 서브메뉴 배경
         &::after{
@@ -75,26 +76,33 @@
       }
       &.active{
         >.link{
-          @include hover;
-          border-bottom: 3px solid var.$color_main_green;
+          border-bottom-color: var.$color_main_green;
+          color: var.$color_main_green;
         }
       }
     }
   }
+
+  // 서브메뉴
   .subMenu{
     position: absolute;
     padding: 10px 20px;
     display: flex;
     gap: 10px;
     z-index: 1;
-    outline: 1px dashed red;
     display: none;
 
     >li{
       padding: 10px 0;
+
       >.link{
+        color: var.$color_gray70;
         font-size: 18px;
-        border: 1px solid blue;
+
+        @include hover{
+          font-weight: bold;
+          text-decoration: underline;
+        }
       }
     }
   }

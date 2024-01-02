@@ -136,7 +136,7 @@ button {
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: #17643f;
+  border-bottom: 2px solid #17643f;
   display: none;
 }
 #header .topMenu > li > .link {
@@ -149,9 +149,7 @@ button {
   line-height: 70px;
 }
 #header .topMenu > li:hover > .link {
-  border-bottom: 3px solid #17643f;
-}
-#header .topMenu > li:hover > .link:hover {
+  border-bottom-color: #17643f;
   color: #17643f;
 }
 #header .topMenu > li:hover::after {
@@ -161,9 +159,7 @@ button {
   display: flex;
 }
 #header .topMenu > li.active > .link {
-  border-bottom: 3px solid #17643f;
-}
-#header .topMenu > li.active > .link:hover {
+  border-bottom-color: #17643f;
   color: #17643f;
 }
 #header .subMenu {
@@ -172,15 +168,19 @@ button {
   display: flex;
   gap: 10px;
   z-index: 1;
-  outline: 1px dashed red;
   display: none;
 }
 #header .subMenu > li {
   padding: 10px 0;
 }
 #header .subMenu > li > .link {
+  color: #575757;
   font-size: 18px;
-  border: 1px solid blue;
+}
+#header .subMenu > li > .link:hover {
+  color: #17643f;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #footer {
