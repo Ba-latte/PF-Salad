@@ -73,40 +73,6 @@ button {
   overflow: hidden;
 }
 
-#footer {
-  width: 100%;
-  height: 100px;
-  background-color: #333333;
-  border: 1px solid #000;
-  text-align: center;
-}
-#footer .content {
-  margin-top: 20px;
-  color: #fafafa;
-}
-
-#header {
-  width: 100%;
-  display: flex;
-}
-#header .logo {
-  width: 20%;
-  height: 70px;
-  background-color: orange;
-}
-#header ul {
-  width: 80%;
-  height: 70px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: green;
-}
-#header ul a {
-  padding: 10px 20px;
-  font-size: 18px;
-}
-
 #wrap {
   max-width: 1920px;
   margin: 0 auto;
@@ -116,18 +82,122 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 99;
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #666666;
+  background-color: #868686;
   color: #ffffff;
   transform: translateY(-60px);
   transition: transform 0.3s ease-in-out;
 }
 #shortcut > a:focus {
   transform: translateY(0);
+}
+
+.link {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #868686;
+}
+#header .logo {
+  width: 20%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+#header .logo .link {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  aspect-ratio: 77.5/70;
+  background: url(../assets/salady_logo.png) no-repeat center/cover;
+}
+#header .topMenu {
+  width: 80%;
+  height: 70px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#header .topMenu > li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #17643f;
+  display: none;
+}
+#header .topMenu > li > .link {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+  line-height: 70px;
+}
+#header .topMenu > li:hover > .link {
+  border-bottom: 3px solid #17643f;
+}
+#header .topMenu > li:hover > .link:hover {
+  color: #17643f;
+}
+#header .topMenu > li:hover::after {
+  display: block;
+}
+#header .topMenu > li:hover .subMenu {
+  display: flex;
+}
+#header .topMenu > li.active > .link {
+  border-bottom: 3px solid #17643f;
+}
+#header .topMenu > li.active > .link:hover {
+  color: #17643f;
+}
+#header .subMenu {
+  position: absolute;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+  outline: 1px dashed red;
+  display: none;
+}
+#header .subMenu > li {
+  padding: 10px 0;
+}
+#header .subMenu > li > .link {
+  font-size: 18px;
+  border: 1px solid blue;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: #404040;
+  border: 1px solid #000;
+  text-align: center;
+}
+#footer .content {
+  margin-top: 20px;
+  color: #cccccc;
+}
+
+#main {
+  width: 100%;
+  height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

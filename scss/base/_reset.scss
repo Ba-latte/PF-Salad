@@ -57,13 +57,3 @@ a{
 button{
   border: 0;
 }
-
-// ir : IE 구버전에서 인식 못하는 경우가 있어서 마진-1px 적용
-.ir{
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
