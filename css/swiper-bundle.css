@@ -463,7 +463,16 @@ button.swiper-pagination-bullet {
 }
 /* Fraction */
 .swiper-pagination-fraction {
-  color: var(--swiper-pagination-fraction-color, inherit);
+  position: absolute;
+  left: 50%;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  transform: translateX(-50%);
+  /* color: var(--swiper-pagination-fraction-color, inherit); */
+  color: #fff;
 }
 /* Progress */
 .swiper-pagination-progressbar {
