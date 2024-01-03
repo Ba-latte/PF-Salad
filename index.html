@@ -6,6 +6,8 @@
   <title>PF-샐러드 리뉴얼</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="https://salady.com/new_favicon.ico" type="image/x-icon" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -68,7 +70,61 @@
       </ul>
     </header>
     <!-- //pc-header -->
-    <main id="main"></main>
+    <main id="main">
+      <!-- Swiper -->
+      <div class="swiper mainBanner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban09.png" alt="APP event 무제한 친구 추천 혜택, 1월 3일부터 1월 30일까지, 친구 추천시 1000원 가입 완료시 2000원">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban08.png" alt="스프 메뉴 로스티드어니언 크림스프, 단호박 크림스프, 콘치즈 스프, 양송이 크림스프">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban07.png" alt="winter party, 따뜻한 샐러디를 만나보세요">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban06.png" alt="샐러디는 청정 지역에서 직접 프리미엄 채소를 재배합니다.">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban05.png" alt="winter 메뉴 spam 콜라보 스팸 25% 라이트에그 웜볼 8,5 스팸 25% 라이트에그 버거 7,5">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban04.png" alt="hot sandwich 메뉴 바질치킨 핫샌드위치 8,2 비프앤치즈 핫샌드위치 7,5">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban03.png" alt="vegan 메뉴 머쉬룸두부 웜볼 8,9 단호박두부 샐러디 8,9">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban02.jpg" alt="Tastes Better">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/main/ban01.jpg" alt="Eat Better Be Better">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
     <!-- //main -->
     <footer id="footer">
       <p class="content">
@@ -80,5 +136,20 @@
     <!-- //footer -->
   </div>
 </body>
-  <script src="./js/contents.js"></script>
+<script>
+  const mainBanner_swiper = new Swiper(".mainBanner", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script src="./js/contents.js"></script>
 </html>
