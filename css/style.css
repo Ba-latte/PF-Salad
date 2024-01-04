@@ -1071,6 +1071,10 @@ swiper-container .swiper-notification {
   opacity: 1;
 }
 
+.swiper-pagination-current, .swiper-pagination-total {
+  color: #fff;
+}
+
 #main {
   width: 100%;
 }
