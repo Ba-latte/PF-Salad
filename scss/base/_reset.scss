@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@use '../helpers/variable' as var;
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 html, body, div, span, applet, object, iframe,
@@ -20,6 +20,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color: var.$color_gray90;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -52,7 +53,7 @@ table {
 }
 a{
   text-decoration: none;
-  color: black;
+  color: var.$color_gray100;
 }
 button{
   border: 0;

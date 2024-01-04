@@ -17,6 +17,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  color: #282828;
   vertical-align: baseline;
 }
 
@@ -57,7 +58,7 @@ table {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #111111;
 }
 
 button {
@@ -103,6 +104,32 @@ button {
   line-height: 1.7;
 }
 
+i {
+  font-weight: bold;
+  color: #ff8400;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #111111;
+}
+
+.subTitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: #404040;
+}
+
+.desc {
+  color: #282828;
+  line-height: 1.4;
+}
+
 #header {
   width: 100%;
   display: flex;
@@ -133,6 +160,7 @@ button {
   content: "";
   display: block;
   position: absolute;
+  top: 71px;
   left: 0;
   z-index: 5;
   width: 100%;
@@ -1045,11 +1073,54 @@ swiper-container .swiper-notification {
 
 #main {
   width: 100%;
-  height: 1000px;
 }
 #main .mainBanner img {
   width: 100%;
   object-fit: cover;
+}
+#main .brand {
+  display: grid;
+  padding: 50px 0 100px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 30px;
+}
+#main .brand > .title, #main .brand .content > .wrap .brand > .title {
+  grid-column: 3/11;
+  padding: 50px 0;
+  text-align: center;
+}
+#main .brand .content {
+  grid-column: 3/11;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+#main .brand .content > img {
+  grid-column: 1/7;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main .brand .content > .wrap {
+  grid-column: 7/13;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .brand .content > .wrap .title {
+  line-height: 1.7;
+}
+#main .brand .content.reverse > img {
+  order: 2;
+  grid-column: 7/13;
+}
+#main .brand .content.reverse > .wrap {
+  order: 1;
+  grid-column: 1/7;
+  align-items: flex-end;
+}
+#main .brand .content.reverse > .wrap .desc {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

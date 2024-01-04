@@ -43,3 +43,34 @@
   padding: 0 20px;
   line-height: 1.7;
 }
+
+// i태그 스타일
+i{
+  font-weight: bold;
+  color: var.$color_icon_orange;
+}
+
+// strong태그 스타일
+strong{
+  font-weight: bold;
+}
+
+// 제목 기본 스타일
+.title{
+  font-weight: bold;
+  font-size: var.$tit03;
+  color: var.$color_gray100;
+}
+
+// 부제 기본 스타일
+.subTitle{
+  font-weight: bold;
+  font-size: 18px;
+  color: var.$color_gray80;
+}
+
+// 설명 기본 스타일
+.desc{
+  color: var.$color_gray90;
+  line-height: 1.4;
+}
