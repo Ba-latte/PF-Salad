@@ -171,13 +171,21 @@
         <div class="leftBox">
           <h3 class="title">놓칠 수 없는 새로운 메뉴</h3>
           <p class="desc">지금 바로 확인해보세요.</p>
-          <ul>
-            <li>단호박 크림스프</li>
-            <li>로스트어니언 크림스프</li>
-          </ul>
+          <div class="newMenu__tablist" role="tablist" aria-labelledby="newMenu__tablist">
+            <button id="newMenu__tab1" role="tab" aria-selected="true" aria-controls="newMenu__tabPanel1" type="button">단호박 크림스프</button>
+            <button id="newMenu__tab1" role="tab" aria-selected="false" aria-controls="newMenu__tabPanel1" type="button">로스트어니언 크림스프</button>
+          </div>
         </div>
-        <div class="rightBox">
-          <img src="./assets/main/sweet_pumpkin_cream_soup.png" alt="단호박 크림스프 사진">
+        <div class="rightBox tabPanelArea">
+          <div id="newMenu__tabPanel1" role="tabpanel" aria-labelledby="newMenu__tab1" class="active">
+            <p class="subTitle">#입김_나올_때_딱! #따뜻달달</p>
+            <h4 class="title">단호박 크림스프</h4>
+            <p class="desc">
+              달콤한 단호박과 부드러운 크림이 만나 남녀노소 호불호없이 즐길 수 있는 메뉴
+            </p>
+            <img src="./assets/main/sweet_pumpkin_cream_soup.png" alt="단호박 크림스프 사진">
+            <a class="more" href="" title="상세 페이지로 이동">더보기</a>
+          </div>
         </div>
       </section>
       <!-- //신메뉴 소개 -->

@@ -117,6 +117,7 @@ strong {
   font-weight: bold;
   font-size: 30px;
   color: #111111;
+  line-height: 1.7;
 }
 
 .subTitle {
@@ -128,6 +129,17 @@ strong {
 .desc {
   color: #282828;
   line-height: 1.4;
+}
+
+.more {
+  width: 70px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 #header {
@@ -1088,7 +1100,7 @@ swiper-container .swiper-notification {
   grid-template-columns: repeat(12, 1fr);
   grid-row-gap: 30px;
 }
-#main .brand > .title, #main .brand .content > .wrap .brand > .title {
+#main .brand > .title {
   grid-column: 3/11;
   padding: 50px 0;
   text-align: center;
@@ -1111,9 +1123,6 @@ swiper-container .swiper-notification {
   flex-direction: column;
   justify-content: center;
 }
-#main .brand .content > .wrap .title {
-  line-height: 1.7;
-}
 #main .brand .content.reverse > img {
   order: 2;
   grid-column: 7/13;
@@ -1125,6 +1134,63 @@ swiper-container .swiper-notification {
 }
 #main .brand .content.reverse > .wrap .desc {
   text-align: right;
+}
+
+.newMenu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  margin: 100px 0;
+}
+.newMenu .leftBox {
+  grid-column: 3/6;
+  text-align: center;
+}
+.newMenu .leftBox .newMenu__tablist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+.newMenu .leftBox .newMenu__tablist > button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+}
+.newMenu .leftBox .newMenu__tablist > button[aria-selected=true] {
+  font-weight: bold;
+}
+.newMenu .rightBox {
+  position: relative;
+  height: fit-content;
+  grid-column: 6/11;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+.newMenu .rightBox > div[role=tabpanel] {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+}
+.newMenu .rightBox > div[role=tabpanel] .desc {
+  margin: 20px 0 0;
+}
+.newMenu .rightBox > div[role=tabpanel] img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.newMenu .rightBox > div[role=tabpanel] .more {
+  float: right;
+}
+.newMenu .rightBox > div[role=tabpanel]::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */

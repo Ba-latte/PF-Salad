@@ -43,11 +43,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        .title{
-          @extend .title;
-          line-height: 1.7;
-        }
       }
 
       &.reverse{
@@ -67,5 +62,74 @@
     }
   }
 
-  // 신메뉴 소개
+}
+// 신메뉴 소개
+.newMenu{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+  margin: 100px 0;
+
+  .leftBox{
+    grid-column: 3/6;
+    // background-color: rgb(235, 119, 119);
+    text-align: center;
+
+    .newMenu__tablist{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px;
+
+      > button{
+        padding: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 16px;
+
+        &[aria-selected="true"]{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .rightBox{
+    position: relative;
+    height: fit-content;
+    grid-column: 6/11;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+
+    > div[role="tabpanel"]{
+      // position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 50px;
+      .desc{
+        margin: 20px 0 0;
+      }
+      img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+      .more{
+        float: right;
+      }
+      // 더보기 버튼 오른쪽 정렬(float)해제
+      &::after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      // 활성화시
+      &.active{
+        
+      }
+    }
+  }
 }
