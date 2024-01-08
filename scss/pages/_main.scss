@@ -97,16 +97,21 @@
     position: relative;
     height: fit-content;
     grid-column: 6/11;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 18px;
-
+    
     > div[role="tabpanel"]{
-      // position: absolute;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
+      height: fit-content;
       padding: 50px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 18px;
+
+      // 비활성화시 숨겨둠
+      opacity: 0;
+
       .desc{
         margin: 20px 0 0;
       }
@@ -128,7 +133,7 @@
 
       // 활성화시
       &.active{
-        
+        opacity: 1;
       }
     }
   }

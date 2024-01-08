@@ -1165,15 +1165,18 @@ swiper-container .swiper-notification {
   position: relative;
   height: fit-content;
   grid-column: 6/11;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 18px;
 }
 .newMenu .rightBox > div[role=tabpanel] {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: fit-content;
   padding: 50px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  opacity: 0;
 }
 .newMenu .rightBox > div[role=tabpanel] .desc {
   margin: 20px 0 0;
@@ -1191,6 +1194,9 @@ swiper-container .swiper-notification {
   content: "";
   display: block;
   clear: both;
+}
+.newMenu .rightBox > div[role=tabpanel].active {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
